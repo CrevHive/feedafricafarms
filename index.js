@@ -3,7 +3,7 @@ const app = express(); //this is an instance of the express class
 const port = process.env.PORT || 8080; //connection port to be used
 var path = require('path');
 
-//app.use(express.static(path.join(__dirname + '/public')));
+app.use(express.static(path.join(__dirname + '/public')));
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/index.html'));
