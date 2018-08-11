@@ -1,0 +1,29 @@
+{
+  "name": "feedafricafarms",
+  "version": "1.0.0",
+  "description": "official website for feedafricafarms.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrevHive/feedafricafarms.git"
+  },
+  "keywords": [
+    "Agriculture",
+    "Farming",
+    "Feeding",
+    "Africa"
+  ],
+  "author": "Tolu Adetuyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrevHive/feedafricafarms/issues"
+  },
+  "homepage": "https://github.com/CrevHive/feedafricafarms#readme",
+  "dependencies": {
+  "express": "^4.16.3"
+}
+}
