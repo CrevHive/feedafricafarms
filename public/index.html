@@ -1,136 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Feed Africa Farms</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/faf.png"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/countdowntime/flipclock.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-</head>
-<body>
+  <head>
+    <!-- Metas -->
+    <meta charset="utf-8" />
+    <title>Feed Africa Farms</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css -->
+    <link
+      href="css/bootstrap.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css" />
+    <link
+      href="css/flexslider.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="css/magnific-popup.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="loader">
+      <!-- Preloader inner -->
+      <div class="loader-inner">
+        <svg
+          width="120"
+          height="220"
+          viewbox="0 0 100 100"
+          class="loading-spinner"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            class="spinner"
+            cx="50"
+            cy="50"
+            r="21"
+            fill="#ffffff"
+            stroke-width="4"
+          />
+        </svg>
+      </div>
+      <!-- End preloader inner -->
+    </div>
+    <!-- End preloader-->
+    <!--Wrapper-->
+    <div class="wrapper">
+      <div
+        class="modal login fade"
+        id="search"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="p-5">
+              <form class="d-flex">
+                <div class=" input-group form mr-2">
+                  <div class="input-group-prepend ">
+                    <span class="input-group-text form-icon">
+                      <span class="fa fa-search form-icon-inner"></span>
+                    </span>
+                  </div>
+                  <input
+                    class="form-control"
+                    name="search"
+                    placeholder="Search"
+                    type="text"
+                  />
+                </div>
+                <button class="btn btn-primary" type="submit">
+                  Go
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Header-->
+      <header class="header">
+        <div class="container ">
+          <div class="floating-nav mt-lg-3">
+            <nav class="navbar navbar-expand-lg header-navbar ">
+              <div class="navbar-brand">
+                <a class=" navbar-brand navbar-logo" href="/">
+                  <img class="mb-0" height="50px" src="images/faf.png" alt="" />
+                </a>
+              </div>
+              <button
+                class="navbar-toggler btn-navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target=".nav-menu"
+                aria-expanded="true"
+                aria-label="Toggle navigation"
+              >
+                <span class="fa fa-bars"></span>
+              </button>
+              <div
+                class="nav-menu collapse navbar-collapse navbar-collapse justify-content-end py-0 "
+              >
+                <ul class=" navbar-nav  header-navbar-nav">
+                     <li><a class=" nav-link" href="/">Home</a></li>
+                     <li><a class=" nav-link" href="/about">About</a></li>
+                     <li><a class=" nav-link" href="/service">Services</a></li>
+                     <li><a class="nav-link" href="/contact">Contact</a></li>
+                  <li class="btn-nav mr-lg-3">
+                    <a
+                      class="btn btn-primary btn-sm "
+                      href="/contact">Partner With
+                      Us</a
+                    >
+                  </li>
+              
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!--End header-->
+      <!--Hero section-->
+      <section class="hero">
+        <div class="background-img gradient-overlay gradient-overlay-dark">
+          <img src="images/bg.jpg" alt="" />
+        </div>
+        <div class="container height-70vh">
+          <div class="row justify-content-center text-center">
+            <div class="col-12 col-md-10 col-lg-10">
+              <h1 class="display-4 mb-3 text-white">
+                Feed Africans <span class="typed font-weight-600"></span>
+              </h1>
+              <p class="lead mb-5 text-white">
+                Feed Africa Farms is a network of seasoned enterpreneur passionate about ending hunger in 
+                Africa by feeding the Next Generation of Africans without waste.
+              </p>
+              <a
+                class="play-but text-center mt-3 popup-youtube"
+                href="https://www.youtube.com/watch?v=Gc2en3nHxA4"
+              >
+                <span class="play-icon play-icon-md">
+                  <span class="fa fa-play play-icon-inner"></span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End hero section-->
 
-
-	<div class="bg-img1 size1 overlay1 p-t-24" style="background-image: url('images/bg01.jpg');">
-		<div class="flex-w flex-sb-m p-l-80 p-r-74 p-b-175 respon5">
-			<div class="wrappic1 m-r-30 m-t-10 m-b-10">
-				<a href="#"><img src="images/icons/faf.png" alt="LOGO"></a>
-			</div>
-
-			<div class="flex-w m-t-10 m-b-10">
-				<a href="#" class="size3 flex-c-m how-social trans-04 m-r-6">
-					<i class="fa fa-facebook"></i>
-				</a>
-
-				<a href="#" class="size3 flex-c-m how-social trans-04 m-r-6">
-					<i class="fa fa-twitter"></i>
-				</a>
-
-				<a href="#" class="size3 flex-c-m how-social trans-04 m-r-6">
-					<i class="fa fa-youtube-play"></i>
-				</a>
-			</div>
-		</div>
-
-		<div class="flex-w flex-sa p-r-200 respon1">
-			<div class="p-t-34 p-b-60 respon3">
-				<p class="l1-txt1 p-b-10 respon2">
-					FEED AFRICA FARMS WILL
-				</p>
-
-				<h3 class="l1-txt2 p-b-45 respon2 respon4">
-					LAUNCH SOON
-				</h3>
-
-				<div class="cd100"></div>
-
-			</div>
-
-			<div class="bg0 wsize1 bor1 p-l-45 p-r-45 p-t-50 p-b-18 p-lr-15-sm">
-				<h3 class="l1-txt3 txt-center p-b-43">
-					Newsletter
-				</h3>
-
-				<form class="w-full validate-form">
-
-					<div class="wrap-input100 validate-input m-b-10" data-validate = "Name is required">
-						<input class="input100 placeholder0 s1-txt1" type="text" name="name" placeholder="Name">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input m-b-20" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100 placeholder0 s1-txt1" type="text" name="email" placeholder="Email">
-						<span class="focus-input100"></span>
-					</div>
-
-					<button class="flex-c-m size2 s1-txt2 how-btn1 trans-04">
-						Subscribe
-					</button>
-				</form>
-
-				<p class="s1-txt3 txt-center p-l-15 p-r-15 p-t-25">
-					Be the first to hear about our great work and follow smoothly.
-				</p>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/flipclock.min.js"></script>
-	<script src="vendor/countdowntime/moment.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script>
-		$('.cd100').countdown100({
-			/*Set Endtime here*/
-			/*Endtime must be > current time*/
-			endtimeYear: 0,
-			endtimeMonth: 0,
-			endtimeDate: 30,
-			endtimeHours: 18,
-			endtimeMinutes: 0,
-			endtimeSeconds: 0,
-			timeZone: ""
-			// ex:  timeZone: "America/New_York"
-			//go to " http://momentjs.com/timezone/ " to get timezone
-		});
-
-
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-
-</body>
+           <!--Section-->
+           <section class=" spacer-double-sm">
+               <!--Container-->
+               <div class="container">
+                     <!--Row-->
+                     <div class="row text-center text-sm-left">
+                        <div class="col-xl-12">
+                           <div class="d-sm-flex justify-content-sm-center align-items-sm-center">
+                              <div class="mb-4 mb-sm-0 mr-sm-4">
+                                 <h3 class=" mb-0">Are you a Farmer or You love to do Agribusiness ?</h3>
+                              </div>
+                              <a href="/contact">
+                              <button type="button" class="btn btn-primary btn-large"> 
+                               Partner with Us
+                              </button>
+                            </a>
+                            </div>
+                        </div>
+                     </div>
+                     <!--End row-->
+                  </div>
+               <!--End container-->
+             </section>
+             <!--End section-->
+        
+       <!--Section-->
+      <section class="spacer-double-lg bg-gray">
+      
+        <div class="container">
+          <!--Row-->
+          <div class="row justify-content-center">
+            <div class="col">
+              <div class="mb-5 pb-5 text-center">
+                <h2 class="h3">
+                  What We do
+                </h2>
+                <p class="w-md-75 mb-0 mx-auto">
+                  Below are the list of what we're doing to make Africa a better place.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--End row-->
+        </div>
+        <!--End container-->
+        <!--Container-->
+        <div class="container">
+          <!--Row-->
+          <div class="row">
+            <div class="col-md-6 mb-5">
+              <div class="media pr-lg-4">
+                <img
+                  class="max-width-sm  mr-4"
+                  src="assets/svg/undraw_fatherhood.svg"
+                  alt=""
+                />
+                <div class="media-body">
+                  <h4 class="h6">Farmers Empowerment </h4>
+                  <p class="mb-0">
+                    We work closely with Farm Managers to bring their idea into reality by providing Land & Resources required.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-5">
+              <div class="media pl-lg-4">
+                <img
+                  class="max-width-sm  mr-4"
+                  src="assets/svg/undraw_finance.svg"
+                  alt=""
+                />
+                <div class="media-body">
+                  <h4 class="h6">Farm Funding</h4>
+                  <p class="mb-0">
+                    Through Strategic Partnership and Collaboration, We Fund and co-farm during a planting season.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-5">
+              <div class="media pr-lg-4">
+                <img
+                  class="max-width-sm  mr-4"
+                  src="assets/svg/undraw_logistics.svg"
+                  alt=""
+                />
+                <div class="media-body">
+                  <h4 class="h6">Market Produce</h4>
+                  <p class="mb-0">
+                    We provide readily available Produces to FMCGS and Verified Off-Takers both Local & International.
+                  </p>
+                </div>
+              </div>
+            </div>
+       
+            <div class="col-md-6">
+              <div class="media pl-lg-4">
+                <img
+                  class="max-width-sm  mr-4"
+                  src="assets/svg/undraw_group_chat.svg"
+                  alt=""
+                />
+                <div class="media-body">
+                  <h4 class="h6">Initiatives</h4>
+                  <p class="mb-0">
+                   We work closely with organizations taking initiatives targeted towards empowering the Agricultural Sector in Africa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End row-->
+        </div>
+        <!--End container-->
+      </section>
+      <!--End section-->
+      <!--Section-->
+      <section class="spacer-double-lg">
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row justify-content-center">
+                  <div class="col">
+                     <div class="mb-5 pb-5 text-center">
+                        <h2 class="h3">Understand Our Process</h2>
+                        <p class="w-md-75 mb-0 mx-auto">We can drive the Agribusiness Success Bus together in just 3 simple steps.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row justify-content-around align-items-center">
+                  <div class="col-md-5 col-7 mb-5 mb-lg-0 ">
+                     <div class="tab-content">
+                        <div class="tab-pane fade active show" id="tab-one" role="tabpanel">
+                           <img class="img-fluid " src="assets/svg/undraw_emails.svg" alt="">
+                        </div>
+                        <div class="tab-pane fade" id="tab-two" role="tabpanel">
+                           <img src="assets/svg/undraw_scrum.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="tab-pane fade" id="tab-three" role="tabpanel">
+                           <img class="img-fluid " src="assets/svg/security.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-5 col-md-8">
+                     <ul class="nav nav-cards" role="tablist">
+                        <li>
+                           <a class="card border-0 mb-4 text-blue-alt active show" data-toggle="tab" href="#tab-one" role="tab" aria-controls="tab-one" aria-selected="true">
+                              <div class="card-body p-4">
+                                 <div class="media align-items-center">
+                                    <div class="media-body">
+                                       <h3 class="h6">Send Us an Email</h3>
+                                       <span>
+                                       Reach out to us via email stating how you would love to do Agribusiness with us, One of our Business Leaders will pick it up for a follow up conversation.
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="card border-0 mb-4 text-blue-alt" data-toggle="tab" href="#tab-two" role="tab" aria-controls="tab-two" aria-selected="false">
+                              <div class="card-body p-4">
+                                 <div class="media align-items-center">
+                                    <div class="media-body">
+                                       <h3 class="h6">Plan with Us</h3>
+                                       <span>
+                                       If everything goes well from the business conversation, We basically swing into Planning Mode where every iota of the business deal is clearly articulated, documented & signed</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="card border-0 text-blue-alt" data-toggle="tab" href="#tab-three" role="tab" aria-controls="tab-three" aria-selected="false">
+                              <div class="card-body p-4">
+                                 <div class="media align-items-center">
+                                    <div class="media-body">
+                                       <h3 class="h6">Execute & Deliver</h3>
+                                       <span>
+                                       We love seeing Results and so we swing into action once we've both Plan & agreed to do business together, The goal is to ensure that everyone is happy.
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+           </section>
+      <!--End section-->
+      <!--Section-->
+      <section class=" spacer-double-sm">
+        <div class="background-img gradient-overlay gradient-overlay-azure">
+          <img src="assets/img/7.jpg" alt="" />
+        </div>
+        <!--Container-->
+        <div class="container">
+          <!--Row-->
+          <div class="row text-center text-sm-left">
+            <div class="col-xl-12">
+              <div
+                class="d-sm-flex justify-content-sm-center align-items-sm-center"
+              >
+                <div class="mb-4 mb-sm-0 mr-sm-5">
+                  <h2 class="text-white mb-0">Ready to do Agribusiness ?</h2>
+                </div>
+                <a href="/contact">
+                <button type="button" class="btn btn-outline-light btn-large">
+                  Partner with Us
+                </button>
+              </a>
+              </div>
+            </div>
+          </div>
+          <!--End row-->
+        </div>
+        <!--End container-->
+      </section>
+      <!--End section-->
+ 
+      <!--Footer-->
+      <footer class="bg-dark spacer-double-md">
+        <!--Container-->
+        <div class="container">
+          <!--row-->
+          <div class="row justify-content-between">
+            <div class="col-lg-4 d-flex align-items-start flex-column">
+              <a class="d-inline-block mb-4" href="javascript:;">
+                <img
+                  src="images/icons/faf.png"
+                  class="footer-logo"
+                  alt=""
+                />
+              </a>
+              <p class="font-size-12 text-light">
+                &copy; 2018 - 2019 all rights reserved - Feed Africa Farms. <br />
+              </p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-0">
+              <h3 class="h6 text-white mb-3 font-weight-600">About us</h3>
+              <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action" href="/about">About</a>
+                <a class="list-group-item list-group-item-action" href="/service">Services</a>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-0">
+              <h3 class="h6 text-white mb-3 font-weight-600">
+                Help &amp; Support
+              </h3>
+              <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action" href="/contact">Contact us</a>
+                <a  class="list-group-item list-group-item-action" href="javascript:;">FAQ</a>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3  mb-0">
+              <h3 class="h6 text-white mb-3 font-weight-600">Social hubs</h3>
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item mb-2 mb-lg-0 mr-1">
+                  <a class="social-icon" href="javascript:;"
+                    ><span class="fab fa-facebook-f"></span
+                  ></a>
+                </li>
+                <li class="list-inline-item mr-1">
+                  <a class="social-icon " href="javascript:;"
+                    ><span class="fab fa-twitter"></span
+                  ></a>
+                </li>
+                <li class="list-inline-item mr-1">
+                  <a class="social-icon " href="javascript:;"
+                    ><span class="fab fa-youtube"></span
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="social-icon " href="javascript:;"
+                    ><span class="fab fa-linkedin"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </footer>
+      <!--End footer-->
+      <!--To the top-->
+      <a class="scroll-to-top scroll" href="#wrapper"
+        ><span class=" fa fa-angle-up top-icon "></span
+      ></a>
+      <!-- End to the top -->
+    </div>
+    <!-- End wrapper-->
+    <!--Javascript-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-dropdownhover.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/typeanimation.js"></script>
+    <script src="js/placeholders.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Google analytics -->
+    <!-- End google analytics -->
+  </body>
 </html>
