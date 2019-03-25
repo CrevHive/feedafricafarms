@@ -137,7 +137,7 @@
                   <!--Row-->
                   <div class="row justify-content-center">
                      <div class="col-lg-9">
-                        <form>
+                        <form id="contact-form">
                            <div class="row">
                               <div class="col-sm-6 mb-5">
                                  <label class="form-label">
@@ -145,7 +145,7 @@
                                  <span class="text-danger">*</span>
                                  </label>
                                  <div class=" input-group form">
-                                    <input class="form-control " type="text" name="name" placeholder="Your full name">
+                                    <input class="form-control " type="text" id="name" placeholder="Your full name" required />
                                  </div>
                               </div>
                               <div class="col-sm-6 mb-5">
@@ -154,7 +154,7 @@
                                  <span class="text-danger">*</span>
                                  </label>
                                  <div class=" input-group form">
-                                    <input class="form-control " type="email" name="email" placeholder="Your email">
+                                    <input class="form-control " type="email" id="email" placeholder="Your email" required />
                                  </div>
                               </div>
                               <div class="col-12">
@@ -162,7 +162,7 @@
                                     What best describe you
                                     </label>
                                     <div class=" input-group form mb-5">
-                                       <select class="custom-select">
+                                       <select class="custom-select" id="type">
                                           <option selected="">A Business Owner</option>
                                           <option value="budget">Organization Representative</option>
                                           <option value="budget">Government Representative</option>
@@ -176,7 +176,7 @@
                                  A line Description of your request
                                  </label>
                                  <div class=" input-group form">
-                                    <input class="form-control " type="text" name="subject" placeholder="Subject">
+                                    <input class="form-control " type="text" id="subject" placeholder="Subject">
                                  </div>
                               </div>
                               <div class="col-sm-6 mb-5">
@@ -184,7 +184,7 @@
                                  Your phone Number
                                  </label>
                                  <div class="input-group form">
-                                    <input class="form-control " type="text" name="phone" placeholder="Phone">
+                                    <input class="form-control " type="text" id="phone" placeholder="Phone">
                                  </div>
                               </div>
                            
@@ -194,12 +194,12 @@
                                  <span class="text-danger">*</span>
                                  </label>
                                  <div class=" input-group form mb-5">
-                                    <textarea class="form-control " rows="6" name="text" placeholder="Type your message"></textarea>
+                                    <textarea class="form-control " rows="6" id="text" placeholder="Type your message" required></textarea>
                                  </div>
                               </div>
                               <div class="col">
                                  <div class="text-center">
-                                    <button type="submit" class="btn btn-primary btn-wide mb-2">Submit Request</button>
+                                    <button id="submit" class="btn btn-primary btn-wide mb-2">Submit Request</button>
                                   <p class="small text-muted mb-0" id="response"></p>
                                  </div>
                               </div>
@@ -294,7 +294,8 @@
       <script src="js/jquery.countdown.min.js" ></script>
       <script src="js/placeholders.min.js"></script>
       <script src="js/script.js"></script>
-      <script src="js/contact.js"></script>
+      <script src="js/contacts.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
       <!-- Google analytics -->
       <!-- End google analytics -->
    </body>
