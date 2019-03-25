@@ -51,7 +51,7 @@
 
 respond = (data, type) => {
   Swal.fire({
-    title: "Request Sent!",
+    title: "Request!",
     text: data,
     type: type,
     confirmButtonText: "Ok"
@@ -63,5 +63,5 @@ respond = (data, type) => {
     );
     return pattern.test(emailAddress);
   };
-  
+
 };
